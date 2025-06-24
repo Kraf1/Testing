@@ -1,0 +1,154 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f0f0f;
+  color: #e0e0e0;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header with profile pic */
+.header-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+  border-bottom: 2px solid #2b2b2b;
+  gap: 30px;
+}
+
+.profile-pic img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #00ffe7;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 255, 231, 0.4);
+}
+
+.intro-text {
+  max-width: 500px;
+  text-align: center;
+}
+
+.intro-text h1 {
+  font-size: 1.8rem;
+  color: #00ffe7;
+  margin-bottom: 10px;
+}
+
+.intro-text p {
+  font-size: 1.1rem;
+  color: #bbb;
+}
+
+/* Section titles */
+h2 {
+  font-size: 2rem;
+  border-left: 6px solid #00ffe7;
+  padding-left: 15px;
+  margin: 40px 0 20px;
+  color: #00ffe7;
+}
+
+/* About section */
+.about-section p {
+  font-size: 1rem;
+  color: #ccc;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  line-height: 1.8;
+  box-shadow: 0 0 10px rgba(0,255,231,0.1);
+}
+
+/* Projects Section */
+#projects {
+  margin-top: 40px;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.project-card {
+  background: #1a1a1a;
+  flex: 1 1 calc(33.333% - 20px);
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 5px solid #00ffe7;
+  transition: transform 0.2s ease;
+  min-width: 280px;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+  background-color: #222;
+}
+
+.project-card h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #ccc;
+}
+
+/* Skills Section */
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+/* Contact links */
+a {
+  color: #00ffe7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 1px solid #2b2b2b;
+  color: #777;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 900px) {
+  .project-card {
+    flex: 1 1 100%;
+  }
+
+  .intro-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .profile-pic img {
+    width: 120px;
+    height: 120px;
+  }
+}
